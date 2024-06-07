@@ -1,0 +1,24 @@
+/******* animação de imagens ******/
+@media (prefers-reduce-motion: no-preference){/* para aparelhos com animação desligada */
+.classe-nome {
+    animation: fade-in linear;
+    animation-timeline: view(); /* tamanho; pode ser em px*/
+
+    animation-range-start: 100px; /* pode ser cover ou contain*/
+    animation-range-end: 300px;
+}
+
+/* base da animação */
+@keyframes fade-in {
+    from {
+        scale: .8;
+        opacity: 0;
+    }
+
+    to {
+        scale: 1;
+        opacity: 1;
+    }
+}
+}
+
